@@ -54,7 +54,7 @@ set_conda() {
   if [ ! -f "$DL_LOCATION""$INSTALL_SCRIPT_NAME" ]; then
     printf "\e[31mKO\e[0m\n"
     printf "\e[33mDonwloading installer:\e[0m\n"
-    wget -O "$DL_LOCATION" "$DL_LINK"
+    wget -P "$DL_LOCATION" "$DL_LINK"
   else
     printf "\e[32mOK\e[0m\n"
   fi
