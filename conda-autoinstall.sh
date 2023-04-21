@@ -43,7 +43,7 @@ set_conda() {
   DL_LOCATION="/tmp/"
 
   printf "Checking conda: "
-  if $CONDA -h 2>/dev/null; then
+  if $CONDA -h 2> /dev/null; then
     printf "\e[32mOK\e[0m\n"
     check_and_install_42AIenv "$CONDA" "$PIP_PACKAGES"
     return
